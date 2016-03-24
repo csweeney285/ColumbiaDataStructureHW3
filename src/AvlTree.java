@@ -214,7 +214,7 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>>
             ;  // Duplicate; do nothing
         		//check if index is in indexlist
         		//if not add to list
-        if(!t.integerList.contains(index)){
+        if(!t.integerList.contains(index) && t.element.equals(x)){
         	t.integerList.add(index);
         }
         return balance( t );
